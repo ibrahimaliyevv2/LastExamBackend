@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav .container a.navbar-brand {
+  font-size: 40px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: relative;
+  bottom: 10px;
+}
+
+nav .container a.navbar-brand:hover {
+  color: #008800;
+}
+
+nav .container .collapse ul.navbar-nav li.nav-item {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  margin-right: 15px;
+}
+
+nav .container .collapse ul.navbar-nav li.nav-item:hover a.nav-link {
+  color: #008800;
+}
+
+nav .container .collapse ul.navbar-nav li.nav-item a.nav-link {
+  color: white;
+  font-weight: 700;
+}
+
+nav .container .collapse ul.navbar-nav li.nav-item a.active {
+  color: #008800;
+}
+
+#banner {
+  background-image: url(../img/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#banner .container .row {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+#banner .container .row .col-md-12 {
+  text-align: center;
+}
+
+#banner .container .row .col-md-12 img {
+  max-width: 100%;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  width: 230px;
+}
+
+#banner .container .row .col-md-12 p {
+  color: white;
+  font-size: 80px;
+}
+
+#banner .container .row .col-md-12 p span {
+  color: white;
+  font-weight: 0;
+  font-weight: 900;
+}
+
+#banner .container .row .col-md-12 i.fa-angle-up {
+  display: block;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 65px;
+}
+
+#banner .container .row .col-md-12 i.fa-angle-down {
+  display: block;
+  color: white;
+  font-size: 30px;
+}
+
+#proverb {
+  background-color: rgba(32, 151, 32, 0.741);
+}
+
+#proverb .container .row {
+  padding-top: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#proverb .container .row .col-md-6 {
+  text-align: right;
+}
+
+#proverb .container .row .col-md-6 h1 {
+  color: white;
+}
+
+#proverb .container .row .col-md-6 span {
+  opacity: .7;
+}
+
+#proverb .container .row .col-md-6 i {
+  width: 300px;
+  height: 300px;
+  font-size: 200px;
+  color: white;
+  padding-top: 30px;
+  margin-right: 160px;
+}
+
+#who {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#who .container .row .col-md-12 h1 {
+  font-size: 44px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+#who .container .row .col-md-4 {
+  margin-left: 30px;
+}
+
+#who .container .row .col-md-4 p.need-p1 {
+  font-size: 32px;
+}
+
+#who .container .row .col-md-4 p.need-p1 span {
+  font-weight: 700;
+}
+
+#who .container .row .col-md-4 p.need-p2 {
+  font-size: 20px;
+}
+
+#who .container .row .col-md-6 img {
+  margin-left: 80px;
+}
+
+#who .container .row .col-md-2 {
+  margin-right: 25px;
+}
+
+#who .container .row .col-md-2 .profile-item img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#who .container .row .col-md-2 .profile-item h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#who .container .row .col-md-2 .profile-item p {
+  opacity: .7;
+}
+
+#services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f3612b;
+}
+
+#services .container .row .col-md-12 h1 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 55px;
+  opacity: .9;
+}
+
+#services .container .row .col-md-3 .service-item {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#services .container .row .col-md-3 .service-item:hover {
+  border: red solid 1px;
+  background-color: red;
+  -webkit-animation: changecolor 2s;
+          animation: changecolor 2s;
+}
+
+#services .container .row .col-md-3 .service-item:hover img {
+  -webkit-animation: zoomicon 1s;
+          animation: zoomicon 1s;
+}
+
+#services .container .row .col-md-3 .service-item img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  width: 150px !important;
+}
+
+#services .container .row .col-md-3 .service-item h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#get-in-touch {
+  background-color: #1e7e1e;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#get-in-touch .container .row .col-md-12 h1 {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+#get-in-touch .container .row .col-md-12 p {
+  color: white;
+  margin-bottom: 35px;
+}
+
+#get-in-touch .container .row .col-md-6 form .form-group input {
+  margin-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#get-in-touch .container .row .col-md-6 input {
+  padding-top: 124px;
+}
+
+#get-in-touch .container .row .col-md-6 button {
+  padding: 15px 40px;
+  margin-top: 34px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333131;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer .container .row .col-md-12 .social a.social-item {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+footer .container .row .col-md-12 .social a.social-item i {
+  font-size: 44px;
+  border: 1px solid black;
+  border-radius: 25px;
+  border-color: black;
+  padding: 5px;
+}
+
+footer .container .row .col-md-12 .social a.social-item i.fa-instagram:hover {
+  background-color: red;
+  color: white;
+}
+
+footer .container .row .col-md-12 .social a.social-item i.fa-twitter:hover {
+  background-color: #2b2bfd;
+  color: white;
+}
+
+footer .container .row .col-md-12 .social a.social-item i.fa-facebook:hover {
+  background-color: #4e4ebf;
+  color: white;
+}
+
+footer .container .row .col-md-12 .social a.social-item i.fa-pinterest:hover {
+  background-color: red;
+  color: white;
+}
+
+footer .container .row .col-md-12 p {
+  margin-top: 10px;
+  color: white;
+  opacity: .5;
+}
+
+@-webkit-keyframes changecolor {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes changecolor {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@-webkit-keyframes zoomicon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomicon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

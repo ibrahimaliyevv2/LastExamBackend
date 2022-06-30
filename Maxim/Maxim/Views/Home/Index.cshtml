@@ -1,0 +1,147 @@
+﻿@model List<Service>
+
+<main>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="~/assets/img/logo-image.png" alt="">
+                    <p>WE LOVE <span>SIMPLICITY</span></p>
+                    <i class="fa-solid fa-angle-up"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proverb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="first-h1">There's huge space</h1>
+                    <h1>beetween creativity and</h1>
+                    <h1>imagination</h1>
+                    <span>Mark Simmons, Nett Media</span>
+                </div>
+                <div class="col-md-6">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="who">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Who We Are</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="need-p1">We live with <span>creativity</span></p>
+                    <p class="need-p2">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directeal desirabilite de un nov lingua franca:On refusa continuar payar custosi traductores.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="~/assets/img/creativity.png" class="w-100" alt="">
+                </div>
+            </div>
+
+            <div class="row text-center justify-content-center">
+                <div class="col-md-2">
+                    <div class="profile-item">
+                        <img src="~/assets/img/img-1.jpg" class="w-100" alt="">
+                        <h1>John Doe</h1>
+                        <p>Art director</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="profile-item">
+                        <img src="~/assets/img/img-2.jpg" class="w-100" alt="">
+                        <h1>Mike Doe</h1>
+                        <p>Web developer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="profile-item">
+                        <img src="~/assets/img/img-3.jpg" class="w-100" alt="">
+                        <h1>Neil Doe</h1>
+                        <p>Web designer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="profile-item">
+                        <img src="~/assets/img/img-4.jpg" class="w-100" alt="">
+                        <h1>Mark Joe</h1>
+                        <p>UI designer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="profile-item">
+                        <img src="~/assets/img/img-5.jpg" class="w-100" alt="">
+                        <h1>Stephen B</h1>
+                        <p>Digital imaging</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Services</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                @foreach (Service srv in Model)
+                {
+                    <div class="col-md-3">
+                        <div class="service-item">
+                            <img src="~/assets/img/@srv.ImageName" class="w-100 imagepart" alt="">
+                            <h1>@srv.Title</h1>
+                            <p>@srv.Description</p>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="get-in-touch">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Get in Touch</h1>
+                    <p>
+                        Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur eieum. Sumo aeque assentior te eam, pri nominati posidonium consttuam
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                    <button type="button" class="btn btn-success">Send message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

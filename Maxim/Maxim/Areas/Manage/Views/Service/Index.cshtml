@@ -1,0 +1,45 @@
+﻿@Model List<Service>
+
+@{ 
+    int count = 0;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <a asp-action="create" type="button" class="btn btn-primary">CREATE</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (Service srv in Model)
+                    {
+                        count++;
+                        <tr>
+                            <th scope="row">@count</th>
+                            <td>@srv.Title</td>
+                            <td>@srv.Description</td>
+                            <td>
+                                <img src="~/assets/img/@srv.ImageName" alt="Alternate Text" />
+                            </td>
+                            <td>
+                                <a asp-controller="service" asp-action="edit" type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a asp-controller="service" asp-action="delete" type="button" class="btn btn-danger sweet-delete"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
